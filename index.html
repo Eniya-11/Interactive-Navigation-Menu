@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Hut</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">🍔 Burger Hut</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#aboutModal">About</a></li>
+      <li><a href="#menuModal">Menu</a></li>
+      <li><a href="#contactModal">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <h1>Welcome to Burger Hut</h1>
+    <p>Serving happiness, one burger at a time 🍟</p>
+  </header>
+
+  <!-- About Modal -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>About Us</h2>
+      <img src="https://www.thingstodosrilanka.com/wp-content/uploads/2022/10/Burger-Hut.jpg" class="modal-img" alt="About Burger Hut">
+      <p>We craft gourmet burgers with passion and premium ingredients.</p>
+    </div>
+  </div>
+
+  <!-- Menu Modal -->
+  <div id="menuModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>Our Menu</h2>
+      <img src="https://img.hellofresh.com/hellofresh_s3/image/super-cheesy-beef-burger-and-chips-0fd57e26-fe038018.jpg" class="modal-img" alt="Menu Items">
+      <ul>
+        <li>
+          <img src="https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-wide-FS-and-foodporn-55.jpg" alt="Classic Cheeseburger" />
+          <span>Classic Cheeseburger</span>
+        </li>
+        <li>
+          <img src="https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg?resize=80" alt="Spicy Chicken Burger" />
+          <span>Spicy Chicken Burger</span>
+        </li>
+        <li>
+          <img src="https://img.freepik.com/fotos-premium/veggie-delight-burger-fondo-blanco_729149-28724.jpg" alt="Veggie Delight" />
+          <span>Veggie Delight</span>
+        </li>
+        <li>
+          <img src="https://images.deliveryhero.io/image/foodpanda/recipes/burger-patty-recipe-1.jpg" alt="Double Patty Beef Burger" />
+          <span>Double Patty Beef Burger</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>Contact Us</h2>
+      <form action="#success" method="get" class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Type your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Message Modal -->
+  <div id="success" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <h2>✅ Message Sent Successfully!</h2>
+      <p>Thank you for reaching out to us. We'll get back to you soon.</p>
+    </div>
+  </div>
+
+</body>
+</html>
