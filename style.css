@@ -1,0 +1,204 @@
+/* Reset */ 
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffbe6;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #ff6347;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    background: #fff3e0;
+    color: #ff6347;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background: #ffccbc;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-image: url('https://source.unsplash.com/1600x600/?burger,food');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 160px 20px 100px;
+    margin-top: 60px;
+    color: #6F4F37;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2em;
+  }
+  
+  /* Modal via :target */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .modal:target {
+    display: block;
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation: fadeIn 0.3s;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content ul {
+    padding-left: 20px;
+  }
+  
+  .modal-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  /* Menu Modal Specific Styling */
+  #menuModal ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #menuModal ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1em;
+  }
+  
+  #menuModal ul li img {
+    margin-right: 15px;
+    width: 50px;  /* Adjust the size of the images */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  #menuModal ul li span {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  .contact-form button {
+    margin-top: 15px;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e5533f;
+  }
+  
+  /* Success Message */
+  #success .modal-content {
+    text-align: center;
+    color: green;
+  }
+  
+  #success h2 {
+    margin-bottom: 10px;
+  }
+  
+  #success p {
+    font-size: 1.2em;
+  }
+  
+  /* Fade animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
